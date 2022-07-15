@@ -1,58 +1,100 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <script src="https://kit.fontawesome.com/d5fed1061e.js" crossorigin="anonymous"></script>
-   <link rel="stylesheet" type="text/css" href="./Style/styles.css"/> 
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/d5fed1061e.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" type="text/css" href="./Style/styles.css"/> 
     <title>Prdouct Landing Page</title>
-</head>
-<body>
-  <header id="header">
-    <a href="#"><img id="header-img" src="https://cdn.pixabay.com/photo/2017/03/19/20/19/ball-2157465__340.png"></a>
-    <nav id="nav-bar">
-      <ul class="nav-bar-items">
-        <li><a class="nav-link" href="#header-img">Home</a></li>
-        <li><a class="nav-link" href="#products">Products</a></li>
-        <li><a class="nav-link" href="#form">Get Started</a></li>
-        <li><a class="nav-link" href="#terms">Terms & Conditions</a></li>
-        <div class="search-button">
-          <input type="text" placeholder="search"/>
-          <button class="button" type="submit">Search</button>
-          </div>
-      </ul>
-    </nav>
-  </header>
-  <section id="main-section">
-    <video id="video" controls="controls" src="https://youtu.be/J-tx3j81QQk" autoplay>
-</video> <br><br>
+    </head>
+    <body>
+      <header id="header">
+        <a href="#"><img id="header-img" src="https://cdn.pixabay.com/photo/2017/03/19/20/19/ball-2157465__340.png"></a>
+        <nav id="nav-bar">
+          <ul class="nav-bar-items">
+            <li><a class="nav-link" href="#header-img">Home</a></li>
+            <li><a class="nav-link" href="#products">Products</a></li>
+            <li><a class="nav-link" href="#form">Get Started</a></li>
+            <li><a class="nav-link" href="#terms">Terms & Conditions</a></li>
+            <div class="search-button">
+              <input type="text" placeholder="search"/>
+              <button class="button" type="submit">Search</button>
+              </div>
+          </ul>
+        </nav>
+      </header>
+      <section id="main-section">
+        <video id="video" controls="controls" src="https://youtu.be/J-tx3j81QQk" autoplay>
+    </video> <br><br>
 
-<form id="form" action="https://www.freecodecamp.com/email-submit">
-  <input id="email" type="email" required placeholder="Enter Your Email" name="email">
-  <button class="submit" type="submit">Submit</button>
-</form>
-  </section>
+    <div class="form-products-div">
+      <form id="form" action="https://www.freecodecamp.com/email-submit">
+        <h3 class="form-head">REGISTER WITH THE COMPANY</h3>
+        <label for="name">First Name</label>
+        <input id="name" type="text" placeholder="Enter Your First Name" name="name"> <br> <br>
+        <label for="name">Middle Name</label>
+        <input id="name" type="text" placeholder="Enter Your Middle Name" name="name"> <br> <br>
+        <label for="name">Last Name</label>
+        <input id="name" type="text" placeholder="Enter Your Last Name" name="name"> <br> <br>
+        <label for="phone">Phone Number</label>
+        <input id="number" type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required placeholder="Enter Your Phone Number" name="phone"> <br> <br>
+        <label for="email">Email</label>
+        <input id="email" type="email" required placeholder="Enter Your Email" name="email"> <br> <br>
+        <label for="date">Date of Birth</label>
+        <input id="birthday" type="date" required placeholder="Enter Your Birth Date" name="birthday"> <br> <br>
 
-  <section id="products"> <h3>OUR PRODUCTS</h3>
-    <img src="https://imageio.forbes.com/specials-images/imageserve/5d35eacaf1176b0008974b54/2020-Chevrolet-Corvette-Stingray/0x0.jpg?format=jpg&crop=4560,2565,x790,y784,safe&width=960"/>
-    <img src="https://www.extremetech.com/wp-content/uploads/2019/12/SONATA-hero-option1-764A5360-edit-640x354.jpg"/>
-    <img src="https://images.unsplash.com/photo-1583267746897-2cf415887172?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"/>
-    <img src="https://images.pexels.com/photos/1545743/pexels-photo-1545743.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"/>
-    <img src="https://images.pexels.com/photos/112460/pexels-photo-112460.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"/>
-    <img src="https://images.pexels.com/photos/120049/pexels-photo-120049.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"/>
-  </section> <br>
+        <label for="password">Password</label>
+        <input id="password" type="password" required placeholder="Enter Password" name="password">
+        <i class="fa fa-eye"></i> <br> <br>
 
-  <footer id="footer-section">
-    <div id="footer-section-div">
-      <i class="fa-brands fa-facebook"></i>
-      <i class="fa-brands fa-whatsapp-square"></i>
-      <i class="fa-brands fa-twitter"></i>
-      <i class="fa-brands fa-instagram-square"></i>
-    </div> <br>
-      <a id="terms" href="freecodecamp.org"> Terms and Condition</a>
-      <p>Copyright 2022. All right reserved</p>
-  </footer>
+        <label for="password">Confirm Password</label>
+        <input id="password" type="password" required placeholder="Confirm Password" name="password"> 
+        <i class="fa fa-eye"></i><br> <br>
+        <button class="submit" type="submit">Submit</button>
+      </form>
+      <div class="car-part-div">
+        <h3>We also sell car parts</h3>
+        <img src="https://www.theengineerspost.com/wp-content/uploads/2022/02/Car-Body-Parts.jpg" alt="image of a car parts" width="100px" height="100px">
+        <img src="https://file.naijauto.com/share/540x302/2019/10/14/qtvFZfJR/car-parts-8ba1.jpg" alt="image of a car parts" width="100px" height="100px">
+        <img src="https://thecarxpert.com/wp-content/uploads/2022/02/car-parts.jpg?ezimgfmt=ng%3Awebp%2Fngcb1%2Frs%3Adevice%2Frscb1-2" alt="image of a car parts" width="100px" height="100px">
+        <img src="https://media.istockphoto.com/photos/car-engine-parts-picture-id1212230930?k=20&m=1212230930&s=612x612&w=0&h=5TC6MATCgCgJOqnSUiRtwv4lcwYkA739LI4lIj6DXvw=" alt="image of a car parts" width="100px" height="100px">
+        <img src="https://www.theengineerspost.com/wp-content/uploads/2022/02/Car-Body-Parts.jpg" alt="image of a car parts" width="100px" height="100px">
+        <img src="https://rxmechanic.com/wp-content/uploads/2022/04/Car-parts.jpg" alt="image of a car parts" width="100px" height="100px">
+        <img src="https://cf.ltkcdn.net/cars/images/std-xs/202343-340x260-Disk-Brakes.jpg" alt="image of a car parts" width="100px" height="100px">
+        <img src="https://namesbee.com/storage/2022/05/auto-part-repair-company-names-ideas.jpg" alt="image of a car parts" width="100px" height="100px">
+      </div>
+    </div>
+      </section>
     
-</body>
+      <section id="products"> <h3>OUR PRODUCTS</h3>
+        <img src="https://imageio.forbes.com/specials-images/imageserve/5d35eacaf1176b0008974b54/2020-Chevrolet-Corvette-Stingray/0x0.jpg?format=jpg&crop=4560,2565,x790,y784,safe&width=960"/>
+        <img src="https://www.extremetech.com/wp-content/uploads/2019/12/SONATA-hero-option1-764A5360-edit-640x354.jpg"/>
+        <img src="https://images.unsplash.com/photo-1583267746897-2cf415887172?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"/>
+        <img src="https://images.pexels.com/photos/1545743/pexels-photo-1545743.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"/>
+        <img src="https://images.pexels.com/photos/112460/pexels-photo-112460.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"/>
+        <img src="https://images.pexels.com/photos/120049/pexels-photo-120049.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"/>
+      </section> <br>
+    
+      <footer id="footer-section">
+        <div id="footer-section-div">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-whatsapp-square"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-instagram-square"></i>
+        </div> <br>
+          <a id="terms" href="freecodecamp.org"> Terms and Condition</a>
+          <p>Copyright 2022. All right reserved</p>
+      </footer>
+
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
 </html>

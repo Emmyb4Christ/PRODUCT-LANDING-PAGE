@@ -5,13 +5,13 @@
   }
   
   body {
-    background-color: white;
-    text-align: center;
+    background-color: rgb(2, 15, 48);
+    box-sizing: border-box;
   }
   
   #header {
-    height: 1oopx;
-    background: #262626;
+    height: 90px;
+    background: #302f2f;
     width: 100%;
     z-index: 12;
     position: fixed;
@@ -21,40 +21,59 @@
   }
   
   #header-img {
-    width: 200px;
-    height: 170px;
-    padding: 20px;
+    width: 120px;
+    height: 80px;
+    margin: 30px;
   }
   
   #header-img:hover {
     border: 2px solid rgb(245, 245, 245)
   }
+
+  #nav-bar {
+    margin-left: 6.0rem;
+    padding-top: 6.5rem;
+  }
   
   #nav-bar li {
     list-style: none;
-    line-height: 50px;
+    float: left;
+    padding-top: 10px;
     float: left;
   }
   
   #nav-bar a {
     text-decoration: none;
-    color: #fff;
+    color: white;
     font-size: 24px;
     text-transform: uppercase;
-    font-family: Tahoma;
-    font-style: bold;
+    font-family: sans-serif, Tahoma;
+    font-weight: bold;
     padding: 30px;
   }
   
   #nav-bar a:hover {
-    background: gray;
-    text-shadow: 2px 1px 1px rgb(230, 230, 230);
+    background-color: gray;
+    text-shadow: 2px 1px 1px rgb(49, 6, 243);
+  }
+
+  #video {
+    display: block;
+    margin: 0 auto;
+    padding-top: 100px;
+    margin-top: -9.5rem;
+  }
+
+  .search-button {
+    float: right;
+    margin-right: 30px;
+    margin-top: 3.5rem;
   }
   
   .search-button input {
     height: 50px;
-    text-align: center;
     font-size: 16px;
+    padding-left: 20px;
     color: #000;
     outline: none;
     margin: 20px;
@@ -72,7 +91,8 @@
   ::placeholder {
     color: gray;
   }
-  
+
+
   .button, .submit {
     border: none;
     width: 150px;
@@ -81,7 +101,6 @@
     height: 50px;
     color: white;
     font-size: 20px;
-    margin-bottom: 15px;
   }
   
   .button:hover {
@@ -109,20 +128,76 @@
   #main-section {
     padding-top: 200px;
   }
+
+  .form-products-div {
+    display: inline-flex;
+    padding-top: 6.0rem;
+  }
+
+  .car-part-div {
+  margin: 40px;
+  }
+
+  .car-part-div img {
+    padding: 8px;
+    border-radius: 20px;
+  }
+
+  .car-part-div h3 {
+    color: white;
+    text-align: center;
+    font-family: sans-serif, Tahoma;
+    font-weight: bold;
+  }
+
+  #form {
+    border: none;
+    background-color: grey;
+    margin: 55px;
+    margin-top: 15px;
+    padding: 30px 30px 0 30px;
+    display: grid;
+    width: 40%;
+  }
   
   #form input {
     height: 50px;
-    text-align: center;
     font-size: 16px;
-    color: #fff;
+    font-family: sans-serif, Tahoma;
+    color: #000;
     outline: none;
-    margin: 20px;
+    margin-left: 0;
+    padding-left: 15px;
     margin-bottom: -8px;
     border: 2px solid #7b7c80;
-    margin-bottom: 50px;
-    font-family: sans-serif, Tahoma;
-  }
    
+  }
+
+  #form label {
+   margin-bottom: 5px;
+   font-family: 'Times New Roman', serif;
+   font-size: 18px;
+   font-weight: bold;
+  }
+
+  #form input:hover {
+    outline: none;
+    border: 3px solid gray;
+  }
+  .form-head {
+    text-align: center;
+    color: #fff;
+    text-shadow: 2px 1px 1px blue;
+    font-family: sans-serif;
+    margin-bottom: 20px;
+  }
+
+  .fa-eye {
+    text-align: right;
+    margin-top: -1.5rem;
+    margin-right: 2.0rem;
+  }
+
   #footer-section {
     background: gray;
     padding: 20px;
@@ -161,5 +236,6 @@
   #products h3 {
     color: #000;
     font-family: "Raleway", sans-serif;
-    font-size: 18px;;
+    font-size: 18px;
+    text-align: center;
   }
