@@ -1,0 +1,165 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background-color: white;
+    text-align: center;
+  }
+  
+  #header {
+    height: 1oopx;
+    background: #262626;
+    width: 100%;
+    z-index: 12;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  #header-img {
+    width: 200px;
+    height: 170px;
+    padding: 20px;
+  }
+  
+  #header-img:hover {
+    border: 2px solid rgb(245, 245, 245)
+  }
+  
+  #nav-bar li {
+    list-style: none;
+    line-height: 50px;
+    float: left;
+  }
+  
+  #nav-bar a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-family: Tahoma;
+    font-style: bold;
+    padding: 30px;
+  }
+  
+  #nav-bar a:hover {
+    background: gray;
+    text-shadow: 2px 1px 1px rgb(230, 230, 230);
+  }
+  
+  .search-button input {
+    height: 50px;
+    text-align: center;
+    font-size: 16px;
+    color: #000;
+    outline: none;
+    margin: 20px;
+    margin-bottom: -8px;
+    background: white;
+     
+  }
+  
+  .search-button input:hover {
+    background: rgb(240, 240, 240);
+    outline: none;
+    border: 3px solid gray;
+  }
+  
+  ::placeholder {
+    color: gray;
+  }
+  
+  .button, .submit {
+    border: none;
+    width: 150px;
+    background: blue;
+    font-weight: bold;
+    height: 50px;
+    color: white;
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  
+  .button:hover {
+    border: 2px solid rgb(126, 126, 231)
+  }
+  
+  @media only screen and (max-width: 550px) {
+    #header {
+      position: inherit;
+      display: grid;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: -9.0rem;
+    }
+  
+    #nav-bar a {
+      font-size: 14px;
+      float: left;
+      padding: 10px;
+      margin-left: 8px;
+    }
+  
+  }
+  
+  #main-section {
+    padding-top: 200px;
+  }
+  
+  #form input {
+    height: 50px;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    outline: none;
+    margin: 20px;
+    margin-bottom: -8px;
+    border: 2px solid #7b7c80;
+    margin-bottom: 50px;
+    font-family: sans-serif, Tahoma;
+  }
+   
+  #footer-section {
+    background: gray;
+    padding: 20px;
+    line-height: 2.0;
+  }
+  
+  #footer-section a, #footer-section p {
+    color: rgb(245, 245, 245);
+  }
+  
+  #footer-section-div {
+    display: inline;
+    justify-content: space-between;
+  }
+  
+  #footer-section-div i {
+    margin: 20px;
+  }
+  
+  #footer-section a {
+    color: blue;
+  }
+  
+  #footer-section a:hover {
+    text-shadow: 1px 0px 0px rgb(30, 30, 255); 
+  }
+  
+  #products img {
+    width: 150px;
+    height: 130px;
+    margin: 20px;
+    border: 5px solid rgb(3, 1, 95);
+  }
+  
+   
+  #products h3 {
+    color: #000;
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;;
+  }
