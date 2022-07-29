@@ -31,31 +31,16 @@
         <video id="video" controls="controls" src="https://youtu.be/J-tx3j81QQk" autoplay>
     </video> <br><br>
 
-    <div class="form-products-div">
-      <form id="form" action="https://www.freecodecamp.com/email-submit">
-        <h3 class="form-head">REGISTER WITH THE COMPANY</h3>
-        <label for="name">First Name</label>
-        <input id="name" type="text" placeholder="Enter Your First Name" name="name"> <br> <br>
-        <label for="name">Middle Name</label>
-        <input id="name" type="text" placeholder="Enter Your Middle Name" name="name"> <br> <br>
-        <label for="name">Last Name</label>
-        <input id="name" type="text" placeholder="Enter Your Last Name" name="name"> <br> <br>
-        <label for="phone">Phone Number</label>
-        <input id="number" type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required placeholder="Enter Your Phone Number" name="phone"> <br> <br>
-        <label for="email">Email</label>
-        <input id="email" type="email" required placeholder="Enter Your Email" name="email"> <br> <br>
-        <label for="date">Date of Birth</label>
-        <input id="birthday" type="date" required placeholder="Enter Your Birth Date" name="birthday"> <br> <br>
-
-        <label for="password">Password</label>
-        <input id="password" type="password" required placeholder="Enter Password" name="password">
-        <i class="fa fa-eye"></i> <br> <br>
-
-        <label for="password">Confirm Password</label>
-        <input id="password" type="password" required placeholder="Confirm Password" name="password"> 
-        <i class="fa fa-eye"></i><br> <br>
-        <button class="submit" type="submit">Submit</button>
-      </form>
+   <div class="form">
+        <h1>Fill in the following form</h1>
+        <input type="text" placeholder="Enter First Name" id="first">
+        <input type="text" placeholder="Enter Last Name" id="last">
+        <input type="email" placeholder="Enter Email Address" id="email">
+        <input type="password" placeholder="Enter Password" id="pass">
+        <input type="password" placeholder="Enter Confirm Password" id="pass2">
+        <button type="submit" id="submit"> Submit</button>
+        <p id="error"></p>
+    </div>
       <div class="car-part-div">
         <h3>We also sell car parts</h3>
         <img src="https://www.theengineerspost.com/wp-content/uploads/2022/02/Car-Body-Parts.jpg" alt="image of a car parts" width="100px" height="100px">
